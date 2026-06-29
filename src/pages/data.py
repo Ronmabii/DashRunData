@@ -1,5 +1,5 @@
 import dash
-from dash import Dash, html, register_page
+from dash import html, register_page
 import dash_ag_grid as dag
 import pandas as pd
 from pathlib import Path
