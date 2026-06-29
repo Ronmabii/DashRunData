@@ -6,7 +6,8 @@ from pathlib import Path
 
 dash.register_page(__name__)
 
-csvPath = Path(__file__).resolve().parents[2]/'data'/'Mileage.csv'
+PROJECT_ROOT = Path(__file__).parents[2] # folder organization vs csv path name
+csvPath = PROJECT_ROOT/ 'data'/'Mileage.csv'
 
 df = pd.read_csv(csvPath)
 
