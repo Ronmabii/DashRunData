@@ -6,7 +6,7 @@ import plotly.express as px
 
 dash.register_page(__name__,path='/') # Home Page
 
-csvPath = Path(__file__).resolve().parent.parent.parent/'data'/'Mileage.csv' # folder organization vs csv path name
+csvPath = Path(__file__).resolve().parents[2]/'data'/'Mileage.csv' # folder organization vs csv path name
 
 df = pd.read_csv(csvPath)
 
