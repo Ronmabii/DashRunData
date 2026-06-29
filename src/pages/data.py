@@ -6,7 +6,7 @@ from pathlib import Path
 
 dash.register_page(__name__)
 
-csvPath = Path(__file__).parent.parent.parent/'data'/'Mileage.csv'
+csvPath = Path(__file__).resolve().parent.parent.parent/'data'/'Mileage.csv'
 
 df = pd.read_csv(csvPath)
 
