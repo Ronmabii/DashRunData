@@ -10,6 +10,7 @@ PROJECT_ROOT = Path(__file__).parents[2] # folder organization vs csv path name
 csvPath = PROJECT_ROOT/ 'data'/'MILEAGE.csv'
 
 df = pd.read_csv(csvPath)
+df['Date'] = pd.to_datetime(df['Date']).dt.date # sort fix (repeats preventable?)
 
 layout = html.Div(
     [
