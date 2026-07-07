@@ -17,7 +17,8 @@ layout = html.Div(
         dag.AgGrid(
             rowData=df.to_dict("records"),
             columnDefs=[{"field":"Date"}, {"field":"Activity Type"}, {"field":"Miles"}, {"field":"Duration(Mins)", "headerName": "Time"}, {"field":"Average Pace"}
-                        , {"field":"Average Heart Rate"}, {"field":"Average Run Cadence"}, {"field":"Average Stride Length"} ]
+                        , {"field":"Average Heart Rate"}, {"field":"Average Run Cadence"}, {"field":"Average Stride Length"} ],
+            columnSize="autoSize"
         )
     ]
 )
