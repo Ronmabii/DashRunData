@@ -1,15 +1,15 @@
-Date,Event,Time,Pace,Link
-11/25/2023,2023 NSRF Leftover Turkey Trot 5K,0:25:48,08:18,https://elitefeats.com/res-det/?id=23338&bibID=76
-3/31/2024,2024 LIRRC Ducks Easter Bunny 5K Run/Walk,0:23:59,07:43,https://elitefeats.com/res-det/?id=23530&bibID=143
-5/3/2025,2025 NYRR Mindful 5K,0:21:54,07:03,https://results.nyrr.org/runner/4650/result/25MIND
-6/14/2025,2025 Citizens Queens 10K,0:53:19,08:35,https://results.nyrr.org/runner/6835/result/25QUEENS
-6/29/2025,2025 Achilles Hope & Possibility 4M,0:33:22,08:21,https://results.nyrr.org/runner/8951/result/25HOP
-7/4/2025,2025 Independence Day 4 Mile Run/Walk,0:30:51,07:43,https://elitefeats.com/res-det/?id=24683&bibID=450
-8/23/2025,2025 NYRR Grete's Great Gallop 10K,0:50:03,08:04,https://results.nyrr.org/runner/8293/result/25GGG
-9/7/2025,2025 New Balance 5th Avenue Mile,0:05:53,05:53,https://results.nyrr.org/runner/4762/result/25FAM
-9/14/2025,2025 New Balance Bronx 10M,1:38:53,09:54,https://results.nyrr.org/runner/6089/result/25BX10M
-10/5/2025,2025 Jersey City 5K,0:19:53,06:24,https://results.nyrr.org/runner/9804/result/25JC
-11/23/2025,2025 Race to Deliver 4M,0:26:56,06:44,https://results.nyrr.org/runner/8508/result/25R2D
-11/27/2025,2025 Bellmore Merrick Turkey Trot 5K Run/Walk,0:19:50,06:23,https://elitefeats.com/res-det/?id=25343&bibID=258
-3/29/2026,2026 Hope in Motion 5K Run/Walk,0:19:52,06:24,https://elitefeats.com/res-det/?id=24811&bibID=143
-6/20/2026,2026 Citizens Queens 10K,0:42:43,06:53,https://results.nyrr.org/runner/5807/result/26QUEENS
+Date,Event,Time,Pace,Distance,Link
+11/25/2023,2023 NSRF Leftover Turkey Trot 5K,0:25:48,08:18,5K,https://elitefeats.com/res-det/?id=23338&bibID=76
+3/31/2024,2024 LIRRC Ducks Easter Bunny 5K Run/Walk,0:23:59,07:43,5K,https://elitefeats.com/res-det/?id=23530&bibID=143
+5/3/2025,2025 NYRR Mindful 5K,0:21:54,07:03,10K,https://results.nyrr.org/runner/4650/result/25MIND
+6/14/2025,2025 Citizens Queens 10K,0:53:19,08:35,4 Mile,https://results.nyrr.org/runner/6835/result/25QUEENS
+6/29/2025,2025 Achilles Hope & Possibility 4M,0:33:22,08:21,4 Mile,https://results.nyrr.org/runner/8951/result/25HOP
+7/4/2025,2025 Independence Day 4 Mile Run/Walk,0:30:51,07:43,10K,https://elitefeats.com/res-det/?id=24683&bibID=450
+8/23/2025,2025 NYRR Grete's Great Gallop 10K,0:50:03,08:04,1 Mile,https://results.nyrr.org/runner/8293/result/25GGG
+9/7/2025,2025 New Balance 5th Avenue Mile,0:05:53,05:53,10 Mile,https://results.nyrr.org/runner/4762/result/25FAM
+9/14/2025,2025 New Balance Bronx 10M,1:38:53,09:54,5K,https://results.nyrr.org/runner/6089/result/25BX10M
+10/5/2025,2025 Jersey City 5K,0:19:53,06:24,4 Mile,https://results.nyrr.org/runner/9804/result/25JC
+11/23/2025,2025 Race to Deliver 4M,0:26:56,06:44,5K,https://results.nyrr.org/runner/8508/result/25R2D
+11/27/2025,2025 Bellmore Merrick Turkey Trot 5K Run/Walk,0:19:50,06:23,5K,https://elitefeats.com/res-det/?id=25343&bibID=258
+3/29/2026,2026 Hope in Motion 5K Run/Walk,0:19:52,06:24,5K,https://elitefeats.com/res-det/?id=24811&bibID=143
+6/20/2026,2026 Citizens Queens 10K,0:42:43,06:53,10K,https://results.nyrr.org/runner/5807/result/26QUEENS
