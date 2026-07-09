@@ -18,7 +18,8 @@ layout = html.Div(
             rowData=df.to_dict("records"),
             columnDefs=[{"field": i} for i in df.columns ],
             defaultColDef={"cellRenderer":"markdown"}, # allows hyperlinks
-            columnSize="autoSize"
+            columnSize="autoSize",
+            style={"width": "100%", "height": "80vh"}
             
         )
     ]
