@@ -8,7 +8,7 @@ server = app.server
 
 app.layout = html.Div(
     [
-        html.H1("Running Data"),
+        html.H1("2026 NYC Training Data"),
         html.Div([
                 dcc.Link(page['name']+ "  |  ", href=page['path'])
                 for page in dash.page_registry.values()
