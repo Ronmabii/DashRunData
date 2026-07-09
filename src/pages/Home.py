@@ -35,10 +35,10 @@ dffHR = df[df["Average Heart Rate"] > 120] # super low ones might be walks
 
 layout = html.Div(
     [
-        html.Button("Overall Mileage", id="btn-overall"),
+        html.Button("Daily Mileage", id="btn-overall"),
         html.Button("Weekly Mileage", id="btn-week"),
         html.Button("Heart Rate", id="btn-heart"),
-        html.Button("Time", id="btn-duration"),
+        html.Button("Run Duration", id="btn-duration"),
         html.Button("Pace", id="btn-pace"),
         dcc.Graph(id="chart", figure = {}, style={"width": "100%", "height": "80vh"})
     ]
@@ -69,6 +69,6 @@ def func(*args): # originally seperate buttons (n_clicks_btn1,...)
         fig = px.scatter(df, x='Date', y = 'Average Pace', title="Average pace tracked starting from November 2023",range_x=["2023-9-01", "2026-06-30"])
         fig.update_layout(yaxis_title="Average Pace (Minutes per Mile)")
     else:
-        fig = px.scatter(df,x='Date',y='Miles',title="Complete Tracked Mileage", hover_data= {"Date": "|%B %d, %Y"})
+        fig = px.scatter(df,x='Date',y='Miles',title="Daily Running Mileage", hover_data= {"Date": "|%B %d, %Y"})
 
     return fig
