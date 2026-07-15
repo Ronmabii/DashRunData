@@ -63,12 +63,12 @@ def func(*args): # originally seperate buttons (n_clicks_btn1,...)
     elif button_id == "btn-heart":
         fig = px.scatter(dffHR, x='Date', y = 'Average Heart Rate',color="Activity Type", title="Average Heart Rate tracked starting from September 2024")
     elif button_id == "btn-duration":
-        fig = px.scatter(df, x='Date', y = 'Minutes', range_x=["2023-9-01", "2026-06-30"],color='Minutes',title="Duration of runs starting from November 2023")
+        fig = px.scatter(df, x='Date', y = 'Minutes', range_x=["2023-9-01", "2026-06-30"],color='Minutes',color_continuous_scale='Turbo',title="Duration of runs starting from November 2023")
         fig.update_xaxes(dtick="M3")
     elif button_id == "btn-pace":
         fig = px.scatter(df, x='Date', y = 'Average Pace', title="Average pace tracked starting from November 2023",range_x=["2023-9-01", "2026-06-30"])
         fig.update_layout(yaxis_title="Average Pace (Minutes per Mile)")
     else:
-        fig = px.scatter(df,x='Date',y='Miles',title="Daily Running Mileage", hover_data= {"Date": "|%B %d, %Y"}, color='Miles')
+        fig = px.scatter(df,x='Date',y='Miles',title="Daily Running Mileage", hover_data= {"Date": "|%B %d, %Y"}, color='Miles', color_continuous_scale='Turbo')
 
     return fig
