@@ -22,7 +22,7 @@ layout = html.Div(
                 html.H4(
                     "Runs : " + str(df.shape[0])
                 ),className=f" border-start border-5"
-            ),className="text-center text-nowrap my-2 p-2"
+            ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
         ),
 
         dbc.Card(
@@ -30,7 +30,7 @@ layout = html.Div(
                 html.H4(
                     "Max Heart Rate : 203 bpm"
                 ),className=f" border-start border-5"
-            ),className="text-center text-nowrap my-2 p-2"
+            ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
         ),
 
         dbc.Card(
@@ -38,9 +38,9 @@ layout = html.Div(
                         html.H4(
                             "Weight : 132 lb"
                         ),className=f" border-start border-5"
-                    ),className="text-center text-nowrap my-2 p-2"
+                    ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
                 ) 
         ]
-        ,style={"width": "18rem"}  
+         
     ) 
 )
