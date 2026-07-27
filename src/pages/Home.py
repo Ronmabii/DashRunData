@@ -16,10 +16,10 @@ df = pd.read_csv(csvPath)
 df[["Date","Week (Monday)"]] = df[["Date","Week (Monday)"]].apply(pd.to_datetime) # needs this to be recognized as a continuous timeline, otherwise compressed(str to datetime)
 
 df['Duration(Mins)'] = pd.to_timedelta(df['Duration(Mins)']) 
-df["Minutes"] = df["Duration(Mins)"].dt.total_seconds() /60 # would be easier to convert to seconds in csv / polars has to_minutes
+df["Minutes"] = df["Duration(Mins)"].dt.total_seconds() /60 # might be easier to convert to seconds in csv / polars has to_minutes
 
 def pace_to_numeric(pace): # keep 10:30 min/mile format into floats (10.5) next time for easier time
-    if pd.isna(pace):
+    if pd.isna(pace): # nulls
         return pace
     minutes, seconds = map(int, pace.split(':'))
     return minutes + (seconds / 60.0)
