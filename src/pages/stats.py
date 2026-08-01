@@ -15,9 +15,9 @@ df['Date'] = pd.to_datetime(df['Date']).dt.date
 
 # loop the repeats / add max speed races
 layout = html.Div(
-    dbc.Stack(
+    dbc.Stack( 
         [
-        dbc.Card(
+        dbc.Card(# pie chart bike/run/elip?
             html.Div(
                 html.H4(
                     "Runs : " + str(df.shape[0])
@@ -25,7 +25,15 @@ layout = html.Div(
             ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
         ),
 
-        dbc.Card(
+        dbc.Card( 
+                    html.Div(
+                        html.H4(
+                            "Miles Ran : " + str(df["Miles"].sum()) + "miles"
+                        ),className=f" border-start border-5"
+                    ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
+                ),
+
+        dbc.Card( # bar chart max average min run heart rate
             html.Div(
                 html.H4(
                     "Max Heart Rate : 203 bpm"
@@ -34,7 +42,7 @@ layout = html.Div(
         ),
 
         dbc.Card(
-                    html.Div(
+                    html.Div( # chart weight range 155 to 132
                         html.H4(
                             "Weight : 132 lb"
                         ),className=f" border-start border-5"
