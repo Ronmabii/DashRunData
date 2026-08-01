@@ -28,7 +28,7 @@ layout = html.Div(
         dbc.Card( 
                     html.Div(
                         html.H4(
-                            "Miles Ran : " + str(df["Miles"].sum()) + "miles"
+                            "Miles Ran : " + str(df["Miles"].sum()) + " miles"
                         ),className=f" border-start border-5"
                     ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
                 ),
