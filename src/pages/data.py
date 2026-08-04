@@ -10,7 +10,7 @@ project_root = Path(__file__).parents[2] # folder organization vs csv path name
 csvPath = project_root/ 'data'/'MILEAGE.csv'
 
 df = pd.read_csv(csvPath)
-df['Date'] = pd.to_datetime(df['Date']).dt.date # sort fix (repeats preventable?) tried new formatting but it turns into an unsortable object
+df['Date'] = pd.to_datetime(df['Date']).dt.date # table sort fix (repeats preventable?) tried new formatting but it turns into an unsortable object
 
 layout = html.Div(
     [

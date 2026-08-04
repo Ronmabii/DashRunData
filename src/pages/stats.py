@@ -17,7 +17,7 @@ df['Date'] = pd.to_datetime(df['Date']).dt.date
 layout = html.Div(
     dbc.Stack( 
         [
-        dbc.Card(# pie chart bike/run/elip?
+        dbc.Card(# pie chart of bike/run/elip?
             html.Div(
                 html.H4(
                     "Runs : " + str(df.shape[0])
