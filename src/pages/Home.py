@@ -67,7 +67,7 @@ def func(*args): # originally seperate buttons (n_clicks_btn1,...)
     elif button_id == "btn-heart":
         fig = px.scatter(dffHR, x='Date', y = 'Average Heart Rate',color="Activity Type", title="Average Heart Rate tracked starting from September 2024")
     elif button_id == "btn-duration":
-        fig = px.scatter(df, x='Date', y = 'Minutes', range_x=["2023-9-01", "2026-06-30"],title="Duration of runs starting from November 2023", hover_data={"Minutes": False, "Duration":True })
+        fig = px.scatter(df, x='Date', y = 'Minutes', range_x=["2023-9-01", "2026-06-30"],title="Duration of runs starting from November 2023", hover_data={"Duration" })
         fig.update_xaxes(dtick="M3")
     elif button_id == "btn-pace":
         fig = px.scatter(dffPace, x='Date', y = 'Average Pace (Float)', title="Average pace tracked starting from November 2023",range_x=["2023-9-01", "2026-06-30"], hover_data={"Average Pace (Float)": False, "Average Pace":True })
