@@ -15,8 +15,8 @@ df = pd.read_csv(csvPath)
 
 df[["Date","Week (Monday)"]] = df[["Date","Week (Monday)"]].apply(pd.to_datetime) # needs this to be recognized as a continuous timeline, otherwise compressed(str to datetime)
 
-df['Duration(Mins)(DT)'] = pd.to_timedelta(df['Duration(Mins)'])  # had to make DT column so original Duration(Mins) could be used for hover
-df["Minutes"] = df["Duration(Mins)(DT)"].dt.total_seconds() /60 # might be easier to convert to seconds in csv / polars has to_minutes
+df['Duration(DT)'] = pd.to_timedelta(df['Duration'])  # had to make DT column so original Duration(Mins) could be used for hover
+df["Minutes"] = df["Duration(DT)"].dt.total_seconds() /60 # might be easier to convert to seconds in csv / polars has to_minutes
 
 def pace_to_float(pace): # change 10:30 min/mile format into floats (10.5) next time for easier time
     if pd.isna(pace): # nulls
@@ -67,7 +67,7 @@ def func(*args): # originally seperate buttons (n_clicks_btn1,...)
     elif button_id == "btn-heart":
         fig = px.scatter(dffHR, x='Date', y = 'Average Heart Rate',color="Activity Type", title="Average Heart Rate tracked starting from September 2024")
     elif button_id == "btn-duration":
-        fig = px.scatter(df, x='Date', y = 'Minutes', range_x=["2023-9-01", "2026-06-30"],title="Duration of runs starting from November 2023", hover_data={"Minutes": False, "Duration(Mins)":True })
+        fig = px.scatter(df, x='Date', y = 'Minutes', range_x=["2023-9-01", "2026-06-30"],title="Duration of runs starting from November 2023", hover_data={"Minutes": False, "Duration":True })
         fig.update_xaxes(dtick="M3")
     elif button_id == "btn-pace":
         fig = px.scatter(dffPace, x='Date', y = 'Average Pace (Float)', title="Average pace tracked starting from November 2023",range_x=["2023-9-01", "2026-06-30"], hover_data={"Average Pace (Float)": False, "Average Pace":True })
