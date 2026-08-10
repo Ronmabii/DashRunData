@@ -15,7 +15,7 @@ df = pd.read_csv(csvPath)
 
 df[["Date","Week (Monday)"]] = df[["Date","Week (Monday)"]].apply(pd.to_datetime) # needs this to be recognized as a continuous timeline, otherwise compressed(str to datetime)
 
-df['Duration(DT)'] = pd.to_timedelta(df['Duration'])  # had to make DT column so original Duration(Mins) could be used for hover
+df['Duration(DT)'] = pd.to_timedelta(df['Duration'])  # converting 1:00:00 to 60 minutes for easy charting
 df["Minutes"] = df["Duration(DT)"].dt.total_seconds() /60 # might be easier to convert to seconds in csv / polars has to_minutes
 
 def pace_to_float(pace): # change 10:30 min/mile format into floats (10.5) next time for easier time
