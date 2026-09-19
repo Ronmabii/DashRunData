@@ -13,6 +13,11 @@ csvPath = project_root/ 'data'/'MILEAGE.csv'
 df = pd.read_csv(csvPath)
 df['Date'] = pd.to_datetime(df['Date']).dt.date
 
+
+#classes
+class block():
+    pass;
+
 # loop the repeats / add max speed races
 layout = html.Div(
     dbc.Stack( 
@@ -26,12 +31,12 @@ layout = html.Div(
         ),
 
         dbc.Card( 
-                    html.Div(
-                        html.H4(
-                            "Miles Ran : " + str(df["Miles"].sum()) + " miles"
-                        ),className=f" border-start border-5"
-                    ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
-                ),
+            html.Div(
+                html.H4(
+                    "Miles Ran : " + str(df["Miles"].sum()) + " miles"
+                ),className=f" border-start border-5"
+            ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
+        ),
 
         dbc.Card( # bar chart max average min run heart rate
             html.Div(
@@ -42,12 +47,20 @@ layout = html.Div(
         ),
 
         dbc.Card(
-                    html.Div( # chart weight range 155 to 132
-                        html.H4(
-                            "Weight : 132 lb"
-                        ),className=f" border-start border-5"
-                    ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
-                ) 
+            html.Div( # chart weight range 155 to 132
+                html.H4(
+                    "Weight : 130 lb"
+                ),className=f" border-start border-5"
+            ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
+        ),
+        dbc.Card(
+            html.Div( 
+                html.H4(
+                    "Debuffs : Pectus Excavatum"
+                ),className=f" border-start border-5"
+            ),className="text-center text-nowrap my-2 p-2",style={"width": "20rem"} 
+        ) 
+
         ]
          
     ) 
